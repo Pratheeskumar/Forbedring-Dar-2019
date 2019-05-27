@@ -1,0 +1,5 @@
+ErrorDocument 404 http://www.DAR.aneemotion.com/404.html
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.DAR.aneemotion.com [NC]
+RewriteRule ^(.*)$ http://DAR.aneemotion.com/$1 [L,R=301]
