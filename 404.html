@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>404 - Siden eksistere ikke.</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+        <div style="position: absolute; top:5%; left: 3%;"><a href="index.html"><img src="DAR-01.svg" style="width: 100%; height:auto;"></a></div>
+		<div class="e404">
+			<h1>4<img src="http://image005.flaticon.com/75/svg/70/70367.svg">4</h1>
+			<p>Siden du leder efter eksistere ikke..</p>
+			<a href="index.html">Vend tilbage til forsiden</a>
+		</div>
+	</body>
+</html>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  position: relative;
+  background-color: #FEFEFE;
+}
+
+.e404 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.e404 h1 {
+  font-size: 202px;
+  font-weight: normal;
+  text-align: center;
+}
+.e404 h1 img {
+  display: inline;
+  width: 140px;
+  padding: 10px;
+  animation: spin 10s linear infinite;
+}
+.e404 p {
+  text-align: center;
+  color: rgb(145, 142, 142);
+}
+.e404 a {
+	width: 60%;
+  	margin: 45px auto;
+	text-decoration: none;
+    border: 2px solid #000;
+  	padding: 20px 10px;
+      color: #000;
+    background-color: #FFF;
+  	text-align: center;
+  	display: block;
+	border-radius: 5px;
+}
+
+.e404 a:hover {
+    color: red;
+    background-color: #FEFEFE;
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(359deg);
+	}
+}</style>
