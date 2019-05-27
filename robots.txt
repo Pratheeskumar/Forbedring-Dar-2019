@@ -1,0 +1,4 @@
+Sitemap: http://www.dar.aneemotion.com/sitemap.xml
+
+User-agent: Googlebot-Image
+Disallow: /
