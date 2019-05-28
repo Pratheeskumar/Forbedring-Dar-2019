@@ -1,0 +1,778 @@
+
+@import url("structure.css");
+
+body {
+	background: rgba(0, 0, 0, 0.1); 
+	height: auto;
+} 
+
+
+
+main {
+	display: inline-block;
+	width: 100%;  
+  }
+  .row div {
+	margin-bottom: 10px;
+  }
+  .row div a {
+	display: inline-block;
+	width: 100%;
+  }
+
+  
+ /* styling burger menu*/
+ /* Style af links i burger menu*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#burger{float: right; width: auto;
+height:auto; }
+
+#burg {
+	display: none;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: none;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display:none;
+    text-align: left;
+  }
+}
+
+/* Container og label på søgemuligheder */
+.container1 {
+	display: block;
+	position: relative;
+	padding-left: 50px;
+	margin-bottom: 30px;
+	cursor: pointer;
+	font-size: 1em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #000;
+	min-width: 205px;
+	padding-top: 5px;
+  }
+  
+  .container1 input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5vh;
+	width: 5vh;
+	background-color: #eee;
+  }
+  
+  .container1:hover input ~ .checkmark {
+	background-color: #ccc;
+	}
+	
+  
+  .container1 input:checked ~ .checkmark {
+	background-color: #3F5b58;
+  }
+  
+  /* Checkmarken */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* fremvisning af checkmark */
+  .container1 input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* indikatorer */
+  .container1 .checkmark:after {
+	left: 11px;
+	top: 3px;
+	width: 12px;
+	height: 23px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+  * {
+	box-sizing: border-box; 
+  
+  }
+
+  /* profilarkiv*/
+  .search-form {
+	width: 30%;
+	float: left;
+  }
+  .search-term {
+	width: 100%;
+	margin: 0 0 5px 0;
+  }
+  .search-terms {
+  width: 100%;
+	padding: 10px;
+  }
+  .search-filters {
+	overflow: hidden;
+	margin: 0 0 0 0;
+	background:rgba(0, 0, 0, 0.1);
+  }
+  .search-filters-title {
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0 0 10px 0;
+  }
+  .filter-group {
+	margin: 0 0 0 0;
+  }
+  .cloned-filters {
+	display: none; 
+  }
+  .search-results {
+	width: 65%;
+	float: right;
+	padding-left: 20px;
+
+  }
+  .result {
+		background-color:#E5E5E5;
+		text-align:left;
+	float: left;
+	width: 48%;
+	height: 90px;
+	margin-right: 1%;
+	margin-bottom: 1.33%;
+	
+	}
+	
+	#myBtn{cursor: pointer;}
+
+
+	.result1 {
+		float: left;
+		width: 48%;
+		height: 80px;
+		margin-right: 1%;
+		margin-bottom: 1.33%;
+		}
+  .result img {
+	width: 100%;
+	height: auto;
+	display: block;
+	}
+	
+	.result1 img {
+		width: 100%;
+		height: auto;
+		display: block;
+		}
+  
+  
+  @media (max-width: 600px) {
+	.search-form,
+	.search-results {
+	  width: 100%;
+	}
+	.search-form {
+	  padding: 0;
+	}
+	.search-terms {
+	  display: table;
+	  width: 100%;
+	  margin: 0;
+	}
+	.search-terms > div {
+	  display: table-row; 
+	}
+	.search-terms > div > span {
+	  display: table-cell;
+	}
+	.search-term-wrap {
+	  padding-right: 10px;
+	}
+	.search-button {
+	  width: 100%;
+	}
+	.search-filters-title {
+	  color: blue;
+	  text-decoration: underline;
+	  cursor: pointer;
+	  margin: 0;
+	}
+	.search-filters.pinned {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  background: rgba(0, 0, 0, 0.2);
+	}
+	.filter-group {
+	  display: none;
+	}
+	.filter-explanation {
+	  display: none;  
+	}
+	
+	.filters-open .filter-group,
+	.filters-open .filter-explanation {
+	  display: block; 
+	}
+	.filters-open .search-filters-title {
+	  margin: 0 0 10px 0;
+	}
+  }
+
+
+
+    /*FOOTER*/
+	.rightbox {
+		color: #FFF;
+		float:right;
+		padding: 20px;
+		font-size: 1vw;
+	  }
+	  
+		  .containerfooter {
+			background-color:#E5E5E5;
+			width: 95%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 14px;
+		  }
+	  .forsvaret {
+		width: 100%;
+		display: inline-block;
+		height: auto;
+		padding-bottom: 40px;
+		background-color: #e5e5e5;
+		border-top: 1.5vh solid #3F5B58;
+	  }
+	  
+	  .leftbox {
+		width: 30%;
+		height: auto;
+		padding-bottom: 5vh;
+		background-color:#E5E5E5;
+		float:left;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	  }
+	  
+	  /*grey header*/
+	  .grey li {
+		float:left;
+		
+		padding-top: 2.6vh;
+		margin-left: 1.5vw;
+	  }
+	  .grey ul {
+		margin-left: 10px;
+	  }
+	  
+	  .grey a {
+		padding: 10px;
+	  font-size: 1vw;
+	  }
+	  
+	  .grey a:hover {
+		color:#e74c3c;
+	  }
+	  
+		/*Header*/
+	  body {
+		background: #FFF;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	  }
+	  
+	  #navigation-bar img {
+		width: auto;
+		height: 5vh;
+	  }
+	  
+	  #menu-nav {
+		max-width: 100%;
+		background-color: #FFF;
+		border-radius: 4px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		margin: 0;
+	  }
+	  #navigation-bar ul {
+		border-radius: 4px;
+		overflow: hidden;
+	  
+	  }
+	  #navigation-bar li {
+		float: left;
+		width: auto;
+		height: 100%;
+	  
+	   border-right: 2px solid rgba(136, 136, 136, 0.226);
+	  }
+	  #navigation-bar li:hover a::before {
+		right: 0;
+		left: 0;
+	  }
+	  #navigation-bar a {
+		color: #000;
+		font-size: 1.2vw;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		position: relative;
+		transition: all 0.3s ease;
+		height: auto;
+	  width: 100%;
+	  height: 10vh;
+	  padding-right: 30px;
+	  padding-top: 3vh;
+	   padding-left: 30px;
+	  }
+	  #navigation-bar a:hover {
+		color: #e74c3c;
+	  }
+	  #navigation-bar a::before {
+		content: "";
+		transition: all 0.4s ease-in-out;
+		position: absolute;
+		right: 50%;
+		left: 50%;
+		bottom: 0;
+		height: 2px;
+		background-color: #e74c3c;
+	  }
+	  #navigation-bar a:hover::before {
+		right: 0;
+		left: 0;
+	  }
+	  #navigation-bar span {
+		display: block;
+	  }
+	  #search-bar {
+		display: none;
+		border-bottom: 3px solid #e74c3c;
+		border-radius: 4px;
+	  }
+	  form {
+		width: 90%;
+	  }
+		
+		
+		.sidebarlefttop{display:inline-block;
+		}
+	  .search-term input {
+		width: auto;
+		padding: 10px 5%;
+		text-align: center;
+		outline: none;
+		box-sizing: border-box;
+		border-radius: 4px;
+		border: 1px solid #e74c3c;
+		color: #888;
+		transition: box-shadow 0.5s ease;
+	  }
+	  input:focus, input:active {
+		box-shadow: 0 0 10px #e74c3c;
+	  }
+
+
+/* Om os */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	padding: 0;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*Burger*/
+
+#navi {
+	display: none;
+}
+
+#navi ul {
+    list-style-type: none;
+    margin:0 0 0 40px;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+#menu {
+    display: block;
+    width: 30px;
+    height: 27px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menu + label span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+#navi label {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 999;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menu:checked ~ label span:nth-child(1) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-13px, -1px);
+}
+
+#menu:checked ~ label span:nth-child(2) {opacity: 0;}
+#menu:checked ~ label span:nth-child(3) {
+    transform: rotate(45deg) translate(-13px, -1px);
+}
+#menu:checked ~ ul {
+    display: block;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 30;
+		transition: background-color .3s ease;
+		width: 100%;
+		float:right;
+}
+
+/* slider*/
+.slider {
+ 
+}
+
+.slider-image {
+      padding: 30px;
+    width: initial!important;
+  display: block!important;
+}
+
+.slider img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-next {
+  right: 2rem;
+}
+
+.slick-prev {
+  left: 2rem;
+}
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
+  opacity: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size:50px;
+}
+
+
+/* Smaller than desktop */
+@media only screen and (max-width: 1150px) {
+	#navigation-bar #soeg{
+		display: none;
+	}
+	.links {
+		display: none;
+	}
+	#navi {
+		display: block;
+	}
+}
+
+/* Smaller than tablet */
+@media (max-width: 750px) {
+	
+}
+
+/* Smaller than mobile */
+@media (max-width: 400px) {
+	
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	
+}
+
+/* Larger than desktop */
+@media (min-width: 1150px) {
+}
+
+/* Slider*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev1,
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover,
+.next1:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column1 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.modal {
+                
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	height: 80%;
+width: 35%;
+background: #D3DBD4;
+position: absolute;
+left: 40%;
+top: 15%;
+background-image: url(css/profila.png);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+border: 7px solid #3F5B58;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	margin-right:3%;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
