@@ -1,192 +1,376 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Det Danske Artilleriregiment</title>
-  <meta name="description" content="Hjemmeside beskrivelse" />
-  <meta name="keywords" content="">
-  <meta name="author" content="Hjemmeside" />
+    <title>Det Danske Artilleriregiment</title>
+    <meta name="description" content="Hjemmeside beskrivelse" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Hjemmeside" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="css/slider.js" defer></script>
-</head>
-<body>
-<main>
-
-  <!-- Divs med x / 12 kolonner i bredde -->
-  <div class="row">
-    <div class="grid-xs-4" style="width: 100%; margin-bottom: 0;"> <div id="menu-nav" style="width: 100%;">
-      <div id="navigation-bar" style="width: 100%; max-height: 15vh;   margin: 0;
-      ">
-         <ul>
-            <li style="margin:0px; padding:0px; max-width:200px; display: inline-block;"><a href="#" style="margin:0px;padding-top: 20px;
-             "><span><img src="DAR.png" alt="Danske Artilleriregiment"></span></a></li>
-             <li class="links"><a href="#"><span>FORSIDE</span></a></li>
-             <li class="links" style="background-color: #EEEEEE;"><a href="#"><span>OM REGIMENTET</span></a></li>
-             <li class="links"><a href="#"><span>VÆRNEPLIGT</span></a></li>
-             <li class="links"><a href="#"><span>LEDIGE STILLINGER</span></a></li>
-             <li class="links"><a href="#"><span>KONTAKT OS</span></a></li>
-             <li id="soeg" style="float:right;"><a href="#" style="width: auto;"><i class="fa fa-search"></i><span></span></a></li>
-           </ul>
-           <div id="navi">
-           <input type="checkbox" id="menu"/>
-           <label for="menu">
-               <span></span>
-               <span></span>
-               <span></span>
-           </label>
-           <ul>
-               <li><a href="#" class="active">FORSIDE</a></li>
-               <li><a href="#">OM REGIMENT</a></li>
-               <li><a href="#">VÆRNEPLIGT</a></li>
-               <li><a href="#">LEDIGE STILLINGER</a></li>
-               <li><a href="#">KONTAKT OS</a></li>
-           </ul>
-         </div>
-      </div></div>
-    
-    
-    </div></div>
-    <div class="grid-xs-4" style="width: 100%; background-color: #EEEEEE; height: 7vh; display: inline-block;"> 
-      <div class="grey">
-      <ul>
-        <li><u style="color: #C8102E;"><a href="#"><span style="color:#000;">OM SKOLELUNDEN</span></a></u></li>
-      <li><a href="index.html"><span style="color:#000;">SKOLELUNDEN</span></a></li>
-      <li><a href="arkiv.html"><span>PROFIL ARKIV</span></a></li> </ul></div></div>
-
-    <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: 80vh; background-image: url(back.png); background-size: cover;"> <div class="text" style="width: 55%;padding-top: 20vh; padding-left: 10vh; font-family: Verdana; font-weight: bolder; color:#FFF;"><h1 style="font-size: 5vw;background-color: black; width: auto;">OM SKOLELUNDEN</h1></div></div>
-    <div class="grid-xs-4" style="width: 100%; height: 160vh; padding: 20px; background-color: #E5E5E5;">
-        <div class="leftboxom" style="width:50%; height: 80vh; background-color: #FFF; padding: 60px; padding-top: 30px; float:left;"><h3>OM SKOLELUNDEN</h3><br>
-          Danske Artilleriregiment har haft en tradition siden 1983 om at plante et ege træ som en passende afslutning for en ansat der stopper ved kasernen.<br><br> Siden starten er der plantet over 100 egetræer. Denne stolte tradition er stadig igang den dag idag.</div>
-      <div class="rightboxom" style="width:50%; height: 80vh; background-color: #FFF; background-image: url(Historie.JPG); float:left; background-position: center; background-size: cover;"> </div>  
-          <div class="rightboxom" style="width:50%; height: 80vh; background-color: #FFF; background-image: url(tra.JPG); float:left; background-position: center; background-size: cover;"> </div>  
-      <div class="leftboxom" style="width:50%; height: 80vh; background-color: #FFF; padding: 60px; padding-top: 30px; float:left;"><h3>SCAN ET TRÆ!</h3><br>
-        I Skolelunden er der plantet træer af forskellige afskedige ansatte. Hvert træ rummer en historie… og en profil! <br><br>Scan den tilhørende QR-kode, med din mobil, og lær mere om personen bag egetræet.<br> <br>Se historier, billeder og videoer, uploadet af pårørende og gamle kollegaer, der fortæller mindeværdige beretninger.</div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="css/slider.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Divs med x / 12 kolonner i bredde -->
+      <div class="row">
+        <div class="grid-xs-4" style="width: 100%; margin-bottom: 0;">
+          <div id="menu-nav" style="width: 100%;">
+            <div
+              id="navigation-bar"
+              style="width: 100%; max-height: 15vh;   margin: 0;
+      "
+            >
+              <ul>
+                <li
+                  style="margin:0px; padding:0px; max-width:200px; display: inline-block;"
+                >
+                  <a
+                    href="#"
+                    style="margin:0px;padding-top: 20px;
+             "
+                    ><span
+                      ><img src="DAR.png" alt="Danske Artilleriregiment"/></span
+                  ></a>
+                </li>
+                <li class="links">
+                  <a href="#"><span>FORSIDE</span></a>
+                </li>
+                <li class="links" style="background-color: #EEEEEE;">
+                  <a href="#"><span>OM REGIMENTET</span></a>
+                </li>
+                <li class="links">
+                  <a href="#"><span>VÆRNEPLIGT</span></a>
+                </li>
+                <li class="links">
+                  <a href="#"><span>LEDIGE STILLINGER</span></a>
+                </li>
+                <li class="links">
+                  <a href="#"><span>KONTAKT OS</span></a>
+                </li>
+                <li id="soeg" style="float:right;">
+                  <a href="#" style="width: auto;"
+                    ><i class="fa fa-search"></i><span></span
+                  ></a>
+                </li>
+              </ul>
+              <div id="navi">
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+                <ul>
+                  <li><a href="#" class="active">FORSIDE</a></li>
+                  <li><a href="#">OM REGIMENT</a></li>
+                  <li><a href="#">VÆRNEPLIGT</a></li>
+                  <li><a href="#">LEDIGE STILLINGER</a></li>
+                  <li><a href="#">KONTAKT OS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid-xs-4"
+        style="width: 100%; background-color: #EEEEEE; height: 7vh; display: inline-block;"
+      >
+        <div class="grey">
+          <ul>
+            <li>
+              <u style="color: #C8102E;"
+                ><a href="#"
+                  ><span style="color:#000;">OM SKOLELUNDEN</span></a
+                ></u
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                ><span style="color:#000;">SKOLELUNDEN</span></a
+              >
+            </li>
+            <li>
+              <a href="arkiv.html"><span>PROFIL ARKIV</span></a>
+            </li>
+            <li>
+              <a href="visit.html"><span>BESØG KASERNEN</span></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="grid-xs-4" style="width: 100%; height: auto; padding: 20px; background-color: #E5E5E5;">
-      <!---->
-      <!-- Container for the image gallery -->
-<div class="container">
+      <div
+        class="grid-xs-4"
+        style="width: 100%; background-color:#E5E5E5; height: 80vh; background-image: url(back.png); background-size: cover;"
+      >
+        <div
+          class="text"
+          style="width: 55%;padding-top: 20vh; padding-left: 10vh; font-family: Verdana; font-weight: bolder; color:#FFF;"
+        >
+          <h1 style="font-size: 5vw;background-color: black; width: auto;">
+            OM SKOLELUNDEN
+          </h1>
+        </div>
+      </div>
+      <div
+        class="grid-xs-4"
+        style="width: 100%; height: 160vh; padding: 20px; background-color: #E5E5E5;"
+      >
+        <div
+          class="leftboxom"
+          style="width:50%; height: 80vh; background-color: #FFF; padding: 60px; padding-top: 30px; float:left;"
+        >
+          <h3>OM SKOLELUNDEN</h3>
+          <br />
+          Danske Artilleriregiment har haft en tradition siden 1983 om at plante
+          et ege træ som en passende afslutning for en ansat der stopper ved
+          kasernen.<br /><br />
+          Siden starten er der plantet over 100 egetræer. Denne stolte tradition
+          er stadig igang den dag idag.
+        </div>
+        <div
+          class="rightboxom"
+          style="width:50%; height: 80vh; background-color: #FFF; background-image: url(Historie.JPG); float:left; background-position: center; background-size: cover;"
+        ></div>
+        <div
+          class="rightboxom"
+          style="width:50%; height: 80vh; background-color: #FFF; background-image: url(tra.JPG); float:left; background-position: center; background-size: cover;"
+        ></div>
+        <div
+          class="leftboxom"
+          style="width:50%; height: 80vh; background-color: #FFF; padding: 60px; padding-top: 30px; float:left;"
+        >
+          <h3>SCAN ET TRÆ!</h3>
+          <br />
+          I Skolelunden er der plantet træer af forskellige afskedige ansatte.
+          Hvert træ rummer en historie… og en profil! <br /><br />Scan den
+          tilhørende QR-kode, med din mobil, og lær mere om personen bag
+          egetræet.<br />
+          <br />Se historier, billeder og videoer, uploadet af pårørende og
+          gamle kollegaer, der fortæller mindeværdige beretninger.
+        </div>
+      </div>
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
-      <img src="IMG_7033.JPG" alt="Skolelunden" style="width:100%">
-  </div>
+      <div
+        class="grid-xs-4"
+        style="width: 100%; height: auto; padding: 20px; background-color: #E5E5E5;"
+      >
+        <!---->
+        <!-- Container for the image gallery -->
+        <div class="container">
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <img src="IMG_7033.JPG" alt="Skolelunden" style="width:100%" />
+          </div>
 
-  <div class="mySlides">
-      <img src="IMG_7052.JPG" alt="Skolelunden" style="width:100%">
-  </div>
+          <div class="mySlides">
+            <img src="IMG_7052.JPG" alt="Skolelunden" style="width:100%" />
+          </div>
 
-  <div class="mySlides">
-      <img src="IMG_7053.JPG" alt="Skolelunden" style="width:100%">
-  </div>
+          <div class="mySlides">
+            <img src="IMG_7053.JPG" alt="Skolelunden" style="width:100%" />
+          </div>
 
-  <div class="mySlides">
-      <img src="IMG_7054.JPG" alt="Skolelunden" style="width:100%">
-  </div>
+          <div class="mySlides">
+            <img src="IMG_7054.JPG" alt="Skolelunden" style="width:100%" />
+          </div>
 
-  <div class="mySlides">
-      <img src="IMG_7058.JPG" alt="Skolelunden" style="width:100%">
-  </div>
+          <div class="mySlides">
+            <img src="IMG_7058.JPG" alt="Skolelunden" style="width:100%" />
+          </div>
 
-  <div class="mySlides">
-      <img src="IMG_7065.JPG" alt="Skolelunden" style="width:100%">
-  </div>
+          <div class="mySlides">
+            <img src="IMG_7065.JPG" alt="Skolelunden" style="width:100%" />
+          </div>
 
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="IMG_7033.JPG"
+                style="width:100%"
+                onclick="currentSlide(1)"
+                alt="Skolelunden"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="IMG_7052.JPG"
+                style="width:100%"
+                onclick="currentSlide(2)"
+                alt="Skolelunden"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="IMG_7053.JPG"
+                style="width:100%"
+                onclick="currentSlide(3)"
+                alt="Skolelunden"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="IMG_7054.JPG"
+                style="width:100%"
+                onclick="currentSlide(4)"
+                alt="Skolelunden"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="IMG_7058.JPG"
+                style="width:100%"
+                onclick="currentSlide(5)"
+                alt="Skolelunden"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="IMG_7065.JPG"
+                style="width:100%"
+                onclick="currentSlide(6)"
+                alt="Skolelunden"
+              />
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div
+        class="grid-xs-4"
+        style="width: 100%; background-color:#E5E5E5; height: auto; padding-bottom: 5vh; padding-top: 5vh; "
+      >
+        <div
+          class="containerfooter"
+          style="display: block; margin-left: auto; margin-right: auto; text-align: center;"
+        >
+          <div
+            class="grid-xs-4 grid-lg-2"
+            style="width: 33.33%; background-color: #E5E5E5; "
+          >
+            <a href="#"
+              ><img
+                src="vaernepligt.jpg"
+                alt="Værnepligt"
+                style="height: 100%; width: 100%;"
+            /></a>
+          </div>
+          <div
+            class="grid-xs-4 grid-lg-2"
+            style="width: 33.33%; background-color: #E5E5E5; "
+          >
+            <a href="#"
+              ><img
+                src="stilling-01.jpg"
+                alt="Stilling"
+                style="height: 100%; width: 100%;"
+            /></a>
+          </div>
+          <div
+            class="grid-xs-4 grid-lg-2"
+            style="width: 33.33%; background-color: #E5E5E5;"
+          >
+            <a href="#"
+              ><img
+                src="indblik-01.jpg"
+                alt="Indblik"
+                style="height: 100%; width: 100%;"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid-xs-4"
+        style="width: 100%; background-color: #E5E5E5; height: auto;"
+      >
+        <div class="containerfooter">
+          <div class="forsvaret">
+            <img
+              src="forsvaret.svg"
+              alt="Forsvaret"
+              style="width:auto; height:17vh; padding-top: 4vh;"
+            />
+          </div>
+          <div class="leftbox">
+            <span><b>Kontakt</b></span
+            ><br />
+            <br />
+            Oksbøl Kaserne<br />
+            Grærup Havvej 2<br />
+            6840 Oksbøl<br />
+            <br />
+            Telefon: +45 7283 9500<br />
+            Pressevagt: +45 2323 6500<br />
+            E-mail: hkic-myn@mil.dk<br />
+            <br />
+            <u><a>Kontakt</a></u>
+          </div>
+          <div class="leftbox">
+            <span><b>Genveje</b></span
+            ><br />
+            <br /><u>
+              Værnepligt<br />
+              <br />
+              Om artilleriregimentet<br />
+              <br />
+              Ledige stillinger<br />
+              <br />
+              Kontakt<br />
+              <br
+            /></u>
+          </div>
 
-  
+          <div class="leftbox">
+            <b>Følg Forsvaret</b><br />
+            <br />
+            <i class="fab fa-twitter-square"></i> Twitter<br />
+            <br />
+            <i class="fab fa-facebook-square"></i> Facebook<br />
+            <br />
+            <i class="fab fa-instagram"></i> Instagram<br />
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid-xs-4"
+        style="width: 100%; background-color: #C8102E; height: 8vh;"
+      >
+        <div class="rightbox">Cookies og persondata</div>
+        <div class="rightbox">Tilgængelighed</div>
+      </div>
 
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="IMG_7033.JPG" style="width:100%" onclick="currentSlide(1)" alt="Skolelunden">
-    </div>
-    <div class="column"> 
-      <img class="demo cursor" src="IMG_7052.JPG" style="width:100%" onclick="currentSlide(2)" alt="Skolelunden">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="IMG_7053.JPG" style="width:100%" onclick="currentSlide(3)" alt="Skolelunden">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="IMG_7054.JPG" style="width:100%" onclick="currentSlide(4)" alt="Skolelunden">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="IMG_7058.JPG" style="width:100%" onclick="currentSlide(5)" alt="Skolelunden">
-    </div> 
-    <div class="column">
-      <img class="demo cursor" src="IMG_7065.JPG" style="width:100%" onclick="currentSlide(6)" alt="Skolelunden">
-    </div>
-  </div>
-</div>
-<!----></div>
-
-        
-    <div class="grid-xs-4" style="width: 100%; background-color:#E5E5E5; height: auto; padding-bottom: 5vh; padding-top: 5vh; ">
-  <div class="containerfooter" style="display: block; margin-left: auto; margin-right: auto; text-align: center;">
-   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="vaernepligt.jpg" alt="Værnepligt" style="height: 100%; width: 100%;"></a></div>
-   <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5; "><a href="#"><img src="stilling-01.jpg" alt="Stilling" style="height: 100%; width: 100%;"></a></div>
-  <div class="grid-xs-4 grid-lg-2" style="width: 33.33%; background-color: #E5E5E5;"><a href="#"><img src="indblik-01.jpg" alt="Indblik" style="height: 100%; width: 100%;"></a></div>
-  </div></div>
-    <div class="grid-xs-4" style="width: 100%; background-color: #E5E5E5; height: auto;"> 
-     
-     
-     
-      <div class="containerfooter">
-        <div class="forsvaret"><img src="forsvaret.svg" alt="Forsvaret" style="width:auto; height:17vh; padding-top: 4vh;"></div>
-<div class="leftbox">
-    <span><b>Kontakt</b></span><br>
-    <br>
-    Oksbøl Kaserne<br>
-    Grærup Havvej 2<br>
-    6840 Oksbøl<br>
-    <br>
-    Telefon: +45 7283 9500<br>
-    Pressevagt: +45 2323 6500<br>
-    E-mail: hkic-myn@mil.dk<br>
-    <br>
-    <u><a>Kontakt</a></u></div>
-<div class="leftbox">
-    <span><b>Genveje</b></span><br>
-<br><u>
-    Værnepligt<br>
-    <br>
-    Om artilleriregimentet<br>
-    <br>
-    Ledige stillinger<br>
-    <br>
-    Kontakt<br>
-    <br></u> </div>
-
-<div class="leftbox">
-    <b>Følg Forsvaret</b><br>
-<br>
-<i class="fab fa-twitter-square"></i> Twitter<br>
-    <br>
-    <i class="fab fa-facebook-square"></i> Facebook<br>
-    <br>
-    <i class="fab fa-instagram"></i> Instagram<br>
-</div>
-
-      </div> </div>
-      <div class="grid-xs-4" style="width: 100%; background-color: #C8102E; height: 8vh;"> 
-      <div class="rightbox">Cookies og persondata</div> <div class="rightbox">Tilgængelighed</div> </div>
-  
-  <!-- Samme som ovenfor, men hver div bliver mindre på desktop-størrelse skærm (lg) -->
-
-
-</main>
-
-</body>
+      <!-- Samme som ovenfor, men hver div bliver mindre på desktop-størrelse skærm (lg) -->
+    </main>
+  </body>
 </html>
