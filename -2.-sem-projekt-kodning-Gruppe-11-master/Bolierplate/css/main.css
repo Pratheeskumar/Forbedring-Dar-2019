@@ -813,7 +813,10 @@ border: 7px solid #3F5B58;
 	cursor: pointer;
 }
 
-.profilepic{display: inline-block;}
-.profilepic img {width:100px; height: 100px; }
-.profilename {display: inline-block;}
+.profilepic {margin: 5px; margin-top: 5px;}
+.profilepic img {display: inline-block; width:100px; height: 100px;}
+.profilename {display: inline-block; font-size: 5px;}
+.profilename h2 {font-size: 10px;}
+.proinfo {font-size: 10px;}
 .profiletree{display: inline-block;}
+.profiletree img {width:50px; height: 50px;}
