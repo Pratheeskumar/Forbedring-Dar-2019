@@ -605,9 +605,6 @@ input[type=submit]:hover {
 }
 
 /* slider*/
-.slider {
- 
-}
 
 .slider-image {
       padding: 30px;
@@ -813,10 +810,45 @@ border: 7px solid #3F5B58;
 	cursor: pointer;
 }
 
-.profilepic {margin: 5px; margin-top: 5px;}
+.profilepic {display: inline-block; margin: 5px; margin-top: 5px;}
 .profilepic img {display: inline-block; width:100px; height: 100px;}
-.profilename {display: inline-block; font-size: 5px;}
+.profilename {display: inline-block; font-size: 7px;}
 .profilename h2 {font-size: 10px;}
-.proinfo {font-size: 10px;}
-.profiletree{display: inline-block;}
-.profiletree img {width:50px; height: 50px;}
+.proinfo {display: block; font-size: 15px; margin-left: 2%; font-weight: 200;}
+.haeder {display: block; height: 6%; border-bottom: 4px solid #3F5B58; margin-left: 2%; margin-right: 2%;}
+.profiletree{display: inline-block; margin: 50px;}
+.profiletree img {width:50px; height: 50px; float: right;}
+.medals {text-align: center;}
+.medalbox {display:inline-block; border:2px solid #3F5B58; height: 50px; width: 50px; margin-top: 2%; }
+.procontent {display: block; height: 6%; border-bottom: 4px solid #3F5B58; margin-left: 2%; margin-right: 2%; }
+.archivebox {display:inline-block; border:2px solid #3F5B58; background:#3F5B58; height: 50px; width: 50px; margin-top: 2%; }
+
+.addbutton{display: block; }
+
+.knap {
+  background-color: #3F5B58; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.knap1 {
+  background-color: #3F5B58; 
+  color: white; 
+	border: 2px solid #E8D11B;
+	margin-left: 2%;
+}
+
+.knap1:hover {
+  background-color: #4CAF50;
+	color: white;
+	
+}
