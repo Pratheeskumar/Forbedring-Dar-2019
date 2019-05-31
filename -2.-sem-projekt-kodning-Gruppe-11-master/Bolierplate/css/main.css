@@ -813,4 +813,7 @@ border: 7px solid #3F5B58;
 	cursor: pointer;
 }
 
-.julie{}
+.profilepic{display: inline-block;}
+.profilepic img {width:100px; height: 100px; }
+.profilename {display: inline-block;}
+.profiletree{display: inline-block;}
