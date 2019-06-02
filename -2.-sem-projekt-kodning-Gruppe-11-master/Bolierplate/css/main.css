@@ -195,7 +195,17 @@ main {
   margin-bottom: 1.33%;
 }
 
-#myBtn {
+.myBtn1 {
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
@@ -212,11 +222,7 @@ main {
   display: block;
 }
 
-.result1 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 
 @media (max-width: 600px) {
   .search-form,
@@ -814,10 +820,10 @@ input:active {
 }
 .profilename {
   display: inline-block;
-  font-size: 7px;
+  font-size: 12px;
 }
 .profilename h2 {
-  font-size: 10px;
+  font-size: 20px;
 }
 .proinfo {
   display: block;
@@ -835,14 +841,16 @@ input:active {
 .profiletree {
   display: inline-block;
   margin: 50px;
+  float:right;
 }
 .profiletree img {
   width: 50px;
   height: 50px;
   float: right;
 }
-.medals {
-  text-align: center;
+
+.medalcontent{ margin-right: 2%;
+margin-left:2%;
 }
 .medalbox {
   display: inline-block;
@@ -875,7 +883,7 @@ input:active {
   background-color: #3f5b58; /* Green */
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -894,6 +902,6 @@ input:active {
 }
 
 .knap1:hover {
-  background-color: #4caf50;
+  background-color: #e8d11b;
   color: white;
 }
