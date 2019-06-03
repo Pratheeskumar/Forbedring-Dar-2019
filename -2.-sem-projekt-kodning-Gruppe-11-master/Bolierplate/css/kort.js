@@ -9,7 +9,6 @@
         }
     }
 
-
     document.getElementById("krydset").addEventListener("click", myFunction);
     function myFunction() {
      var x = document.getElementById("sideBar");
